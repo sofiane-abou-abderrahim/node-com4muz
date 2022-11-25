@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../admin/includes/head', { title: 'Post title' }) %>
+    <link rel="stylesheet" href="/admin/styles/posts.css" />
+    <link rel="stylesheet" href="/admin/styles/forms.css" />
+    <script src="/home/scripts/comments.js" defer></script>
+  </head>
+  <body>
+    <%- include('../admin/includes/header') %>
+    <main id="post-detail">
+      <article class="post-item">
+        <img src="/<%= post.imagePath %>" alt="<%= post.title %>" />
+        <h1><%= post.title %></h1>
+        <section id="post-meta">
+          <address>
+            <a href="mailto:<%= post.author.email %>"
+              ><%= post.author.name %></a
+            >
+          </address>
+          |
+          <time datetime="<%= post.date %>"><%= post.humanReadableDate %></time>
+        </section>
+        <hr />
+        <section>
+          <p id="body"><%= post.content %></p>
+        </section>
+      </article>
+      <section id="comments">
+        <p>
+          Cet article pourrait avoir des commentaires. Vous pouvez les charger
+          si vous souhaitez les voir.
+        </p>
+        <button
+          id="load-comments-btn"
+          class="btn btn-alt"
+          data-postid="<%= post._id %>"
+        >
+          Charger les Commentaires
+        </button>
+      </section>
+      <section id="comments-form">
+        <h2>Leave a comment</h2>
+        <form data-postid="<%= post._id %>">
+          <div class="form-control">
+            <label for="title">Comment title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+          <div class="form-control">
+            <label for="text">Your comment</label>
+            <textarea name="text" id="text" rows="3" required></textarea>
+          </div>
+          <button class="btn">Save Comment</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

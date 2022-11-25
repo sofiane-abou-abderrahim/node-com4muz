@@ -1,0 +1,9 @@
+<article class="post-item">
+  <img src="<%= post.imagePath %>" alt="<%= post.title %>" />
+  <h2><%= post.title %></h2>
+  <p class="post-item-author">By <%= post.author.name %></p>
+  <p><%= post.summary %></p>
+  <div class="post-actions">
+    <a class="btn" href="/blog/<%= post._id %>">View Post</a>
+  </div>
+</article>

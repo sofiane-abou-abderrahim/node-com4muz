@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link href="/home/styles/views/confirmation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/home/styles/overlays.css" />
+    <link rel="stylesheet" href="/home/styles/configuration.css" />
+  </head>
+  <body>
+    <!-- <div id="backdrop"></div> -->
+    <%- include('includes/header') %> <%- include('includes/side-drawer') %>
+    <main>
+      <aside class="modal" id="config-overlay-response">
+        <h2>Bâraka Allahou fîkoum <%= %>  !</h2>
+        <p>
+          Nous allons vous contacter très rapidement pour prendre vos besoins
+          inchâ Allah !
+        </p>
+        <hr />
+        <div class="form-control">
+          <p>En attendant, vous pouvez nous suivre, Marhaban bikoum !</p>
+        </div>
+        <ul class="social-icons">
+          <li>
+            <a href="https://web.facebook.com/Com4Muz" target="_blank">
+              <img
+                width="32"
+                alt="facebook"
+                src="https://cdn.mailerlite.com/images/icons/default/round/color/facebook.png"
+                style="display: block"
+                border="0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/com4muz/" target="_blank">
+              <img
+                width="32"
+                alt="instagram"
+                src="https://cdn.mailerlite.com/images/icons/default/round/color/instagram.png"
+                style="display: block"
+                border="0"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/Com4Muz" target="_blank">
+              <img
+                width="32"
+                alt="twitter"
+                src="https://cdn.mailerlite.com/images/icons/default/round/color/twitter.png"
+                style="display: block"
+                border="0"
+              />
+            </a>
+          </li>
+        </ul>
+        <div>
+          <button type="reset" class="btn-alt" id="cancel-config-btn-response">
+            Quitter
+          </button>
+        </div>
+      </aside>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Bâraka Allahou fîkoum !</h1>
+          <p>
+            Nous allons vous contacter très rapidement pour prendre vos besoins
+            inchâ Allah !
+          </p>
+          <a href="/" class="button">Retour à l'Accueil</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

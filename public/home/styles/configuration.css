@@ -1,0 +1,107 @@
+#config-overlay {
+  text-align: center;
+}
+
+#config-overlay h2 {
+  margin: 0.5rem 0;
+}
+
+.form-control {
+  margin: 0.5rem 0;
+}
+
+.form-control label {
+  display: block;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: bold;
+}
+
+.form-control input {
+  font: inherit;
+  border: 1px solid rgb(204, 204, 204);
+  width: 15rem;
+  padding: 0.35rem;
+}
+
+.modal p {
+  font-size: var(--size-5);
+}
+
+.modal button {
+  font: inherit;
+  background-color: var(--color-primary-300);
+  color: white;
+  border: 1px solid var(--color-primary-300);
+  padding: var(--size-2) var(--size-4);
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.modal button:hover {
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+}
+
+.modal button.btn-alt {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--color-primary-300);
+}
+
+.modal button.btn-alt:hover {
+  background-color: rgba(15, 112, 183, 0.5);
+  border-color: transparent;
+  color: white;
+}
+
+.error-username label {
+  color: rgb(136, 2, 2);
+}
+
+.error-username input {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
+.error-username p {
+  font-size: var(--size-4);
+}
+
+.error-email label {
+  color: rgb(136, 2, 2);
+}
+
+.error-email input {
+  border-color: rgb(136, 2, 2);
+  color: rgb(136, 2, 2);
+  background-color: rgb(253, 219, 219);
+}
+
+.error-email p {
+  font-size: var(--size-4);
+}
+
+#config-overlay-response {
+  text-align: center;
+  display: none;
+}
+
+#config-overlay-response h2 {
+  margin: 0.5rem 0;
+}
+
+.social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.social-icons li {
+  margin: 0 1rem;
+}

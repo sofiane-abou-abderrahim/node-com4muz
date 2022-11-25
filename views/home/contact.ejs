@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('includes/head') %>
+    <link rel="stylesheet" href="/home/styles/views/contact.css" />
+    <script src="/home/scripts/contact.js" defer></script>
+    <title>Contact - Com4Muz: Agence Web Musulmane</title>
+  </head>
+  <body>
+    <%- include('includes/header') %> <%- include('includes/side-drawer') %>
+    <main>
+      <section id="hero">
+        <div id="hero-content">
+          <h1>Contactez Votre Agence Web Musulmane !</h1>
+          <p>
+            Notre agence reste entièrement à votre disposition pour vous
+            accompagner dans vos projets et vous permettre de réaliser vos
+            souhaits !
+          </p>
+          <a href="mailto:contact@com4muz.com" class="button"
+            >Demandez Votre Devis Gratuit Maintenant !</a
+          >
+        </div>
+      </section>
+      <section id="contact-form">
+        <article>
+          <h2>
+            Com4Muz vous invite à prendre contact avec l’un de nos agents
+            professionnels spécialisés en communication pour une éventuelle
+            collaboration. Ceci dit, si vous souhaitez d’abord avoir
+            connaissance des diverses prestations que nous réalisons, vous
+            pouvez également découvrir l’intégralité de nos services.
+          </h2>
+        </article>
+        <form action="/contact" method="POST">
+          <ul>
+            <li>
+              <label for="name">Nom</label>
+              <input type="text" name="name" id="name" required />
+            </li>
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" />
+            </li>
+            <li>
+              <label for="message">Message</label>
+              <textarea
+                class="focus-textarea"
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+                maxlength="250"
+              ></textarea>
+              <span id="charcount">
+                <span id="remaining-chars">250</span>/250
+              </span>
+            </li>
+            <button>Envoyer</button>
+          </ul>
+        </form>
+        <article>
+          <h3 id="title">Prenez Contact & Faites Des Affaires !</h3>
+          <p>
+            N’hésitez pas à nous contacter dès maintenant via le formulaire de
+            notre agence de communication afin de nous faire part de votre
+            projet. Effectivement, nous nous ferons un plaisir de vous répondre
+            dans les plus brefs délais.
+          </p>
+          <p>
+            Vous pouvez également nous joindre en écrivant directement un
+            e-mail. En effet, un membre de notre équipe sera à votre écoute pour
+            vous conseiller ou vous orienter vers le service le plus adapté à
+            votre demande. Par ailleurs, notre chat en ligne est disponible pour
+            obtenir une conversation directe avec l’un de nos conseillers. En
+            somme, nous sommes à votre disposition où que vous soyez et de la
+            manière que vous le souhaitez.
+          </p>
+          <p>
+            Email:<a href="mailto:contact@com4muz.com"> contact@com4muz.com</a>
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="https://facebook.com/Com4Muz"
+            ><img src="/home/images/icons/facebook.png" alt="Facebook Com4Muz"
+          /></a>
+        </li>
+        <li>
+          <a href="https://instagram.com/com4muz"
+            ><img src="/home/images/icons/insta.png" alt="Instagram Com4Muz"
+          /></a>
+        </li>
+      </ul>
+      <p>
+        © 2022 <a href="https://com4muz.fr">Com4Muz</a> : Agence Web Musulmane –
+        Tous Droits Réservés
+      </p>
+    </footer>
+  </body>
+</html>

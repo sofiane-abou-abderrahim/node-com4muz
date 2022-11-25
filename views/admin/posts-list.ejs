@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include('../admin/includes/head', { title: 'Blog - Gestion Articles' })
+    %>
+    <link rel="stylesheet" href="/admin/styles/posts.css" />
+  </head>
+
+  <body>
+    <%- include('../admin/includes/header') %>
+    <main id="all-posts">
+      <h1>Tous Les Articles</h1>
+      <% if (!posts || posts.length === 0) { %>
+      <p>Aucun article trouvé - peut-être voulez-vous en créer un ?</p>
+      <a class="btn" href="/new-post">Créer un Article</a>
+      <% } else { %>
+      <ol id="posts-list">
+        <% for (const post of posts) { %>
+        <li><%- include('includes/post-item', { post: post }) %></li>
+        <% } %>
+      </ol>
+      <% } %>
+    </main>
+  </body>
+</html>

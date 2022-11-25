@@ -1,0 +1,114 @@
+#hero {
+  background-image: url('/home/images/sliders/slider-5-com4muz.webp');
+}
+
+#contact-form {
+  background-color: var(--color-grey-100);
+}
+
+#contact-form article {
+  text-align: center;
+  padding: var(--size-10);
+}
+
+#contact-form form ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#contact-form h2 {
+  margin: 0;
+}
+
+#contact-form form {
+  width: 30rem;
+  background-color: white;
+  margin: 0 auto;
+  padding: var(--size-10);
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+#contact-form form label {
+  display: block;
+  padding-bottom: var(--size-2);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  display: block;
+  margin-bottom: var(--size-4);
+  box-sizing: border-box;
+  font: inherit;
+  border: 1px solid var(--color-grey-400);
+  padding: var(--size-1);
+  color: var(--color-grey-700);
+}
+
+#contact-form input:focus {
+  background-color: var(--color-grey-100);
+  color: var(--color-grey-400);
+  border-color: var(--color-grey-400);
+}
+
+.focus-textarea:focus {
+  background-color: var(--color-grey-100);
+  color: var(--color-grey-400);
+  border-color: var(--color-grey-400);
+}
+
+#contact-form button {
+  display: block;
+  font: inherit;
+  background-color: var(--color-primary-300);
+  color: white;
+  border: 1px solid var(--color-primary-300);
+  padding: var(--size-2) var(--size-4);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contact-form button:hover {
+  background-color: var(--color-primary-700);
+  border-color: var(--color-primary-700);
+}
+
+#charcount {
+  color: rgb(105, 101, 75);
+}
+
+.warning {
+  background-color: rgb(248, 191, 145);
+}
+
+#remaining-chars.warning {
+  color: rgb(211, 109, 26);
+}
+
+.error {
+  background-color: rgb(248, 157, 145);
+}
+
+#remaining-chars.error {
+  color: rgb(211, 54, 26);
+}
+
+@media (max-width: 48rem) {
+  #contact-form form {
+    width: 15rem;
+  }
+
+  #contact-form h2 {
+    font-size: var(--size-5);
+  }
+
+  #contact-form h3 {
+    font-size: var(--size-4);
+  }
+
+  #contact-form p {
+    font-size: var(--size-4);
+  }
+}

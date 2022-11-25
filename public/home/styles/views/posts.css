@@ -1,0 +1,83 @@
+#hero {
+  background-image: url('/home/images/sliders/slider-4-com4muz.webp');
+}
+
+.button {
+  margin-top: 1rem;
+}
+
+#advantages {
+  background-color: var(--color-grey-100);
+  text-align: center;
+}
+
+#advantages ul {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem 1.25rem;
+  width: 50%;
+}
+
+#advantages li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+#advantages li:hover {
+  transform: scale(1.05);
+}
+
+#advantages li img {
+  width: auto;
+  height: 3rem;
+}
+
+#advantages li svg {
+  width: 20rem;
+  height: 4rem;
+  color: var(--color-primary-300);
+  padding: 0.5rem;
+}
+
+#no-posts {
+  text-align: center;
+}
+
+.advantage-content {
+  padding: 1.5rem;
+}
+
+.advantage-content h4 {
+  margin: 0;
+  padding: 0.5rem 0;
+  color: var(--color-primary-300);
+}
+
+.advantage-content h2 {
+  margin: 0;
+  padding: 0.5rem 0;
+  font-size: 1.25rem;
+}
+
+.advantage-content p {
+  font-size: 1rem;
+}
+
+@media (max-width: 48rem) {
+  #advantages ul {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 2rem 0;
+    width: 90%;
+  }
+
+  #advantages li svg {
+    width: 40rem;
+  }
+}

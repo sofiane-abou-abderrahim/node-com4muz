@@ -1,0 +1,194 @@
+#hero {
+  background-image: url('/home/images/sliders/slider-1-com4muz.webp');
+}
+
+#highlights {
+  background-color: var(--color-grey-100);
+}
+
+#descriptions {
+  list-style: none;
+  margin: 0 auto 0 auto;
+  padding: 3rem;
+  display: flex;
+}
+
+.description {
+  margin: 0 1.25rem;
+  color: var(--color-primary-300);
+  font-size: 1.375rem;
+}
+
+.description h2 {
+  margin: 0;
+}
+
+.description p {
+  font-size: var(--size-4);
+}
+
+.description strong {
+  color: var(--color-primary-300);
+}
+
+#presentation ul {
+  margin: 0 auto;
+  padding: 0;
+}
+
+#presentation li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* #presentation li img {
+  width: 50%;
+  height: 25rem;
+} */
+
+#presentation-hero {
+  background-image: url('/home/images/sliders/slider-2-com4muz.webp');
+  padding: 1.5rem;
+  flex: 1 1 0;
+}
+
+#presentation-hero h2 {
+  color: white;
+  text-align: center;
+  font-size: var(--size-10);
+}
+
+#presentation-hero strong {
+  color: var(--color-primary-300);
+}
+
+.item-content {
+  padding: 1.5rem;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: space-between; */
+  flex: 1 1 0;
+}
+
+.item-content p {
+  font-size: var(--size-4);
+}
+
+.item-content strong {
+  color: var(--color-primary-300);
+}
+
+.actions a {
+  padding: 0.375rem;
+}
+
+#advantages {
+  background-color: var(--color-grey-100);
+}
+
+#advantages ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.25rem 1.25rem;
+}
+
+#advantages li {
+  display: flex;
+  background-color: white;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+#advantages li:hover {
+  transform: scale(1.05);
+}
+
+#advantages li img {
+  width: auto;
+  height: 3rem;
+}
+
+#advantages li svg {
+  width: 14rem;
+  height: 3rem;
+  color: var(--color-primary-300);
+  padding: 0.25rem;
+}
+
+#advantages h2 {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.advantage-content {
+  padding: 0 1.5rem;
+}
+
+.advantage-content h2 {
+  font-size: 1.25rem;
+}
+
+.advantage-content p {
+  font-size: 1rem;
+}
+
+@media (max-width: 48rem) {
+  #descriptions {
+    display: block;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .description {
+    margin: 0;
+    font-size: 1rem;
+    padding-top: 1rem;
+  }
+
+  .description p {
+    text-align: justify;
+    font-size: var(--size-4);
+  }
+
+  #presentation li {
+    display: block;
+  }
+
+  #presentation li img {
+    width: 100%;
+    height: auto;
+  }
+
+  #presentation-hero,
+  .item-content {
+    text-align: center;
+    padding: 2rem;
+  }
+
+  .item-content h2 {
+    margin: 0;
+  }
+
+  .item-content p {
+    text-align: justify;
+    font-size: var(--size-4);
+  }
+
+  .actions a {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  #advantages ul {
+    display: grid;
+    grid-template-columns: 100%;
+    padding: 2rem 1rem;
+  }
+}

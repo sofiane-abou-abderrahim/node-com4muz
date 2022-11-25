@@ -1,0 +1,22 @@
+<aside id="side-drawer">
+  <header>
+    <a href="#" class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="/">Acceuil</a></li>
+      <li><a href="/a-propos">Qui Sommes-nous ?</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/portefeuille">Portefeuille</a></li>
+      <li><a href="/blog">Blog</a></li>
+      <li><a href="/contact">Contact</a></li>
+      <% if (locals.isAdmin) { %>
+      <li><a href="/admin">Admin</a></li>
+      <% } %>
+    </ul>
+  </nav>
+</aside>

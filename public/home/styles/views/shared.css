@@ -1,0 +1,286 @@
+html {
+  --color-grey-100: rgb(242, 250, 255);
+  --color-grey-400: rgb(124, 123, 123);
+  --color-grey-700: rgb(71, 62, 62);
+  --color-grey-900: rgb(29, 26, 27);
+
+  --color-primary-300: rgb(15, 112, 183);
+  --color-primary-700: rgb(9, 70, 114);
+
+  --size-1: 0.25rem;
+  --size-2: 0.5rem;
+  --size-3: 0.75rem;
+  --size-4: 1rem;
+  --size-5: 1.25rem;
+  --size-6: 1.5rem;
+  --size-7: 1.75rem;
+  --size-8: 2rem;
+  --size-9: 2.5rem;
+  --size-10: 3rem;
+}
+
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+#hero {
+  height: 50rem;
+  background-position: center;
+  background-size: cover;
+}
+
+#hero-content {
+  width: 56.25rem;
+  text-align: center;
+  padding: 6.25rem 0;
+  margin: 0 auto;
+}
+
+#hero-content h1 {
+  font-size: 5rem;
+  text-transform: uppercase;
+  color: white;
+}
+
+#hero-content p {
+  font-size: 1.75rem;
+  color: white;
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+#main-header {
+  padding: 2% 2% 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#main-header img {
+  width: 18.75rem;
+  height: auto;
+}
+
+#main-header a {
+  color: white;
+  font-size: 1.25rem;
+  padding: 0.75rem;
+}
+
+#main-header a:hover,
+#main-header a:active {
+  color: var(--color-primary-300);
+  text-decoration: none;
+}
+
+#main-header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#main-header li {
+  margin-left: 2.5rem;
+}
+
+.menu-btn {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  display: none;
+}
+
+.menu-btn span {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+#side-drawer {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-grey-900);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+#side-drawer:target {
+  display: block;
+}
+
+#side-drawer header {
+  padding: 2% 2% 0 2%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#side-drawer header a {
+  padding: 0.75rem;
+}
+
+#side-drawer ul {
+  list-style: none;
+  margin: 0;
+  padding: 4rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#side-drawer li {
+  margin: 1rem 0;
+}
+
+#side-drawer a {
+  color: white;
+  font-size: 2rem;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-grey-700);
+}
+
+h2 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-grey-700);
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--color-grey-700);
+}
+
+p {
+  font-size: 1.5rem;
+  color: var(--color-grey-400);
+}
+
+a {
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: none;
+  color: var(--color-primary-300);
+}
+
+a:hover {
+  color: var(--color-primary-700);
+}
+
+footer {
+  text-align: center;
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  padding: 3rem 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  width: 5rem;
+  height: 5rem;
+  margin: 0 3rem;
+  padding: 2.5rem 0;
+}
+
+footer img {
+  width: 100%;
+  height: 100%;
+}
+
+footer p {
+  color: white;
+}
+
+footer a {
+  font-family: 'Fira Sans', sans-serif;
+  text-decoration: underline;
+  color: white;
+}
+
+.button {
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-primary-300);
+  color: white;
+  border-radius: 4px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0;
+  box-shadow: 2px 4px 8px rgb(68, 67, 67);
+  border: none;
+}
+
+.button:hover,
+.button:active {
+  text-decoration: none;
+  background-color: var(--color-primary-700);
+  color: white;
+}
+
+@media (max-width: 48rem) {
+  #hero {
+    height: 40.25rem;
+  }
+
+  #hero-content {
+    width: 90%;
+    padding: 5rem 0;
+  }
+
+  #hero-content h1 {
+    font-size: 2.5rem;
+  }
+
+  #hero-content p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  #main-header img {
+    width: 11rem;
+  }
+
+  #main-header nav {
+    display: none;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  footer li {
+    width: 2em;
+    height: 2rem;
+    margin: 0 1.5rem;
+    padding: 2rem 0;
+  }
+
+  footer p {
+    font-size: 1rem;
+  }
+
+  .button {
+    padding: 1rem 1rem;
+  }
+}

@@ -1,0 +1,28 @@
+<header id="main-header">
+  <div id="logo">
+    <a href="/">Accueil</a>
+  </div>
+  <nav>
+    <ul>
+      <% if (locals.isAdmin) { %>
+      <li>
+        <a href="/posts">Gestion Articles</a>
+      </li>
+      <li>
+        <a href="/new-post">Rédaction Articles</a>
+      </li>
+      <% } %>
+      <li>
+        <a href="/blog">Nos Articles</a>
+      </li>
+      <li>
+        <a href="/profile">Profil</a>
+      </li>
+      <% if (locals.isAdmin) { %>
+      <li>
+        <a href="/admin">Admin</a>
+      </li>
+      <% } %>
+    </ul>
+  </nav>
+</header>
